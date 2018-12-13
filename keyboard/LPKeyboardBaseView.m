@@ -85,12 +85,12 @@
 -(UIButton *)createBtnImage:(NSString *)imageName addTarget:target  action:(SEL)action {
     return  [self createBtnImage:imageName selectImage:nil addTarget:target action:action];
 }
--(UIButton *)createBtnImage:(NSString *)imageName selectImage:(nonnull UIImage *)selectImage addTarget:target  action:(SEL)action {
+-(UIButton *)createBtnImage:(NSString *)imageName selectImage:(nonnull NSString *)selectImage addTarget:target  action:(SEL)action {
     UIButton * btn = [UIButton buttonWithType:UIButtonTypeCustom];
     
     [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
     if (selectImage) {
-        [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateSelected];
+        [btn setImage:[UIImage imageNamed:selectImage] forState:UIControlStateSelected];
     }
     btn.layer.cornerRadius =2;
         btn.layer.masksToBounds =YES;

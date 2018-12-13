@@ -32,6 +32,10 @@ typedef enum : NSUInteger {
 @property (nonatomic,weak) id<LPKeyboardViewDelegate>delegate;
 @property (nonatomic,assign) LPKeyboardType  keyboardType;
 
+
+@property (nonatomic,strong) UIView * toobarView;
+@property (nonatomic,strong) UILabel * toobarLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

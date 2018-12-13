@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LPAutoKeyboardTextField : UITextField
-
+@property (nonatomic,assign)  NSInteger textMaxLength;
 @end
 
 NS_ASSUME_NONNULL_END

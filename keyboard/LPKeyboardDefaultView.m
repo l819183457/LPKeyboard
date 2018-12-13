@@ -61,7 +61,8 @@
         [_keyboardsThirdBtnArray addObject:btn];
     }
     //大写按钮
-    _upCapitalBtn = [self createBtnImage:@"keyborad_delete" addTarget:self action:@selector(clickCapital:)];
+//    _upCapitalBtn = [self createBtnImage:@"keyborad_delete" addTarget:self action:@selector(clickCapital:)];
+    _upCapitalBtn = [self createBtnImage:@"keyborad_xiaoxie" selectImage:@"keyborad_daxie" addTarget:self action:@selector(clickCapital:)];
     [self addSubview:_upCapitalBtn];
     
     //删除

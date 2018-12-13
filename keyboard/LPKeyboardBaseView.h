@@ -47,7 +47,7 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
 -(UIButton *)createBtn:(NSString *)title addTarget:target  action:(SEL)action ;
 -(UIButton *)createBtnImage:(NSString *)imageName addTarget:target  action:(SEL)action;
--(UIButton *)createBtnImage:(NSString *)imageName selectImage:(UIImage *)selectImage addTarget:target  action:(SEL)action;
+-(UIButton *)createBtnImage:(NSString *)imageName selectImage:(NSString *)selectImage addTarget:target  action:(SEL)action;
 
 
 

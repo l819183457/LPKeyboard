@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6819B3F521C20C5D006D1EFD /* keyborad_daxie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6819B3F321C20C5D006D1EFD /* keyborad_daxie@2x.png */; };
+		6819B3F621C20C5D006D1EFD /* keyborad_xiaoxie@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6819B3F421C20C5D006D1EFD /* keyborad_xiaoxie@2x.png */; };
 		6855269021AE811C005D8840 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6855268F21AE811C005D8840 /* AppDelegate.m */; };
 		6855269321AE811C005D8840 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6855269221AE811C005D8840 /* ViewController.m */; };
 		6855269621AE811C005D8840 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6855269421AE811C005D8840 /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6819B3F321C20C5D006D1EFD /* keyborad_daxie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyborad_daxie@2x.png"; sourceTree = "<group>"; };
+		6819B3F421C20C5D006D1EFD /* keyborad_xiaoxie@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyborad_xiaoxie@2x.png"; sourceTree = "<group>"; };
 		6855268B21AE811C005D8840 /* LPKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6855268E21AE811C005D8840 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6855268F21AE811C005D8840 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -162,21 +166,23 @@
 			isa = PBXGroup;
 			children = (
 				68AD049E21C0BC7400CB7ECA /* LPKeyboardDefaultView.h */,
-				68AD049F21C0BC7400CB7ECA /* LPKeyboardNumberPadView.h */,
-				68AD04A021C0BC7400CB7ECA /* LPAutoKeyboardTextField.m */,
-				68AD04A121C0BC7400CB7ECA /* keyborad_delete@2x.png */,
-				68AD04A221C0BC7400CB7ECA /* LPKeyboardBaseView.h */,
-				68AD04A321C0BC7400CB7ECA /* keyborad_delete@3x.png */,
-				68AD04A421C0BC7400CB7ECA /* LPKeyboardView.m */,
-				68AD04A521C0BC7400CB7ECA /* UITextField+Extension.m */,
-				68AD04A621C0BC7400CB7ECA /* EHKeyboardView.m */,
-				68AD04A721C0BC7400CB7ECA /* LPAutoKeyboardTextField.h */,
 				68AD04A821C0BC7400CB7ECA /* LPKeyboardDefaultView.m */,
+				68AD049F21C0BC7400CB7ECA /* LPKeyboardNumberPadView.h */,
 				68AD04A921C0BC7400CB7ECA /* LPKeyboardNumberPadView.m */,
-				68AD04AA21C0BC7400CB7ECA /* UITextField+Extension.h */,
-				68AD04AB21C0BC7400CB7ECA /* LPKeyboardView.h */,
+				68AD04A721C0BC7400CB7ECA /* LPAutoKeyboardTextField.h */,
+				68AD04A021C0BC7400CB7ECA /* LPAutoKeyboardTextField.m */,
+				68AD04A221C0BC7400CB7ECA /* LPKeyboardBaseView.h */,
 				68AD04AC21C0BC7400CB7ECA /* LPKeyboardBaseView.m */,
+				6819B3F321C20C5D006D1EFD /* keyborad_daxie@2x.png */,
+				68AD04A121C0BC7400CB7ECA /* keyborad_delete@2x.png */,
+				6819B3F421C20C5D006D1EFD /* keyborad_xiaoxie@2x.png */,
+				68AD04A321C0BC7400CB7ECA /* keyborad_delete@3x.png */,
+				68AD04AA21C0BC7400CB7ECA /* UITextField+Extension.h */,
+				68AD04A521C0BC7400CB7ECA /* UITextField+Extension.m */,
 				68AD04AD21C0BC7400CB7ECA /* EHKeyboardView.h */,
+				68AD04A621C0BC7400CB7ECA /* EHKeyboardView.m */,
+				68AD04AB21C0BC7400CB7ECA /* LPKeyboardView.h */,
+				68AD04A421C0BC7400CB7ECA /* LPKeyboardView.m */,
 			);
 			path = keyboard;
 			sourceTree = SOURCE_ROOT;
@@ -289,6 +295,8 @@
 				68AD04AF21C0BC7400CB7ECA /* keyborad_delete@2x.png in Resources */,
 				68AD04B021C0BC7400CB7ECA /* keyborad_delete@3x.png in Resources */,
 				6855269621AE811C005D8840 /* Main.storyboard in Resources */,
+				6819B3F621C20C5D006D1EFD /* keyborad_xiaoxie@2x.png in Resources */,
+				6819B3F521C20C5D006D1EFD /* keyborad_daxie@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

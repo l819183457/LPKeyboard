@@ -11,7 +11,11 @@
 #import "LPKeyboardNumberPadView.h"
 
 
-@interface LPKeyboardView ()<LPKeyboardBaseViewDelegate>
+@interface LPKeyboardView ()<LPKeyboardBaseViewDelegate> {
+    NSMutableArray * numArray;
+    NSMutableArray * imageArray;
+    CGFloat safeBottom;
+}
 @property (nonatomic,strong) UIView * contentView;
 @property (nonatomic,strong) NSMutableArray * keyboardArray;
 
@@ -29,17 +33,39 @@
 {
     self = [super init];
     if (self) {
+       
+        if (@available(iOS 11.0, *)) {
+            safeBottom = [UIApplication sharedApplication].delegate.window.safeAreaInsets.bottom;
+        } else {
+            safeBottom = 0;
+        }
+        self.backgroundColor = LPUIColorFromRGB(0xd1d5db);
         
         _contentView = [[UIView alloc]init];
+        
+        self.toobarView = [[UIView alloc]init];
+        [self addSubview:self.toobarView];
+        
+        _toobarLabel = [[UILabel alloc]init];
+        _toobarLabel.text = @"安全键盘";
+        _toobarLabel.textColor = [UIColor blackColor];
+        _toobarLabel.textAlignment = NSTextAlignmentCenter;
+        [self.toobarView addSubview:_toobarLabel];
       
-        self.frame =  CGRectMake(0, 0,LP_Line_05, 300);
+//        self.frame =  CGRectMake(0, 0,LP_Line_05, 290+safeBottom);
         self.contentView.backgroundColor = [UIColor redColor];
         [self addSubview:_contentView];
         [self layoutSubviews];
         self.keyboardType = LPKeyboardTypeDefault;
+        
+        
+       
+        
     }
     return self;
 }
+
+
 -(void)buildData {
     
 }
@@ -76,7 +102,6 @@
         _keyboardNumberPadView.type = LPKeyboardTypeNumberPad;
         _keyboardNumberPadView.delegate  = self;
         [_contentView addSubview:_keyboardNumberPadView];
-        
     }
     [self layoutSubviews];
   
@@ -109,12 +134,20 @@
 
 -(void)layoutSubviews {
     [super layoutSubviews];
+    
+    
+    
     CGFloat scale = 1.75;
     CGFloat height =  LP_Width/scale;
+    self.toobarView.frame = CGRectMake(0, 0, LP_Width, 40);
+    self.toobarLabel.frame = self.toobarView.bounds;
     
-    _contentView.frame = CGRectMake(0, 0, LP_Width, height);
+    _contentView.frame = CGRectMake(0, 40, LP_Width, height);
     _keyboardNumberPadView.frame = _contentView.bounds;
     _keyboardDefaultView.frame =_contentView.bounds;
+    self.frame =  CGRectMake(0, 0,LP_Width,height + safeBottom);
+    
+   
 }
 
 
